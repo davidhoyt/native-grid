@@ -1,0 +1,60 @@
+.TH NATIVE-GRID 1 "October 14, 2011"
+.SH NAME
+native grid \- fast, coherent platform for grid computing
+.SH SYNOPSIS
+.B native-grid
+.RI [ options ]
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B gridd
+native grid computing daemon.
+.PP
+.B gridd
+is a platform for developing grid computing-style applications.
+.br
+.SH OPTIONS
+These programs follow the usual GNU command line syntax. A summary of options
+is included below.
+.TP
+.B \-s <file>
+Unix socket path to listen on (disables network support).
+.TP
+.B \-a <perms>
+Permissions (in octal format) for Unix socket created with \-s option.
+.TP
+.B \-l <ip_addr>
+Listen on <ip_addr>; default to INADDR_ANY. This is an important option to
+consider as there is no other way to secure the installation. Binding to an
+internal or firewalled network interface is suggested.
+.TP
+.B \-d
+Run as a daemon.
+.TP
+.B \-u <username>
+Assume the identity of <username> (only when run as root).
+.TP
+.B \-m <num>
+Use <num> MB memory max to use for object storage; the default is 64 megabytes.
+.TP
+.B \-c <num>
+Use <num> max simultaneous connections; the default is 1024.
+.TP
+.B \-p <num>
+Listen on TCP port <num>, the default is port 2468.
+.TP
+.B \-U <num>
+Listen on UDP port <num>, the default is port 2468, 0 is off.
+.br
+.SH LICENSE
+This application is copyright David Hoyt and is distributed under
+the Apache License, v2.0.
+.br
+.SH SEE ALSO
+The README file that comes with gridd
+.br
+.B https://github.com/davidhoyt/native-grid/
+.SH AUTHOR
+gridd was written by David Hoyt
+.B <dhoyt@hoytsoft.org>
+.br

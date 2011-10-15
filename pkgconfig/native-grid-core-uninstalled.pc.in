@@ -1,0 +1,13 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=@abs_top_builddir@/libs/native-grid/core
+includedir=
+
+Name: Native Grid core library, uninstalled
+Description: Core library for Native Grid, uninstalled
+Requires: 
+Version: @VERSION@
+
+Libs: @abs_top_builddir@/libs/native-grid/core/libnative-grid-core.la
+Cflags: -I@abs_top_srcdir@/libs -I@abs_top_builddir@/libs
