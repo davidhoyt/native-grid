@@ -6,8 +6,7 @@ ACLOCAL_AMFLAGS = -I m4
 SUBDIRS = \
 	pkgconfig \
 	src \
-	docs \
-	m4 
+	docs 
 
 DIST_SUBDIRS = \
 	pkgconfig \
