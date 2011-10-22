@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@/native-grid/core
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+Name: Native Grid core library
+Description: Core library for Native Grid
+Requires: 
+Version: @VERSION@
+Libs: -L${libdir} 
+Cflags: -I${includedir}
